@@ -1,0 +1,8 @@
+<ul class="list-group pe-3">
+    <li
+      class="list-group-item mb-2 list-group-item-action" 
+      *ngFor="let reminder of reminders" 
+      [ngClass]="{ 'list-group-item-warning': reminder.remindMe}" >      
+       {{reminder.reminder}}
+    </li>
+</ul>
